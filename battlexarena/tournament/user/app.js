@@ -50,9 +50,14 @@ const firebaseConfig = {
 
         let app, db, auth;
         try {
-            if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
-                console.warn("BattlexArena: Firebase env vars missing! Set them in Netlify Dashboard > Environment Variables.");
-            }
+            if (
+    firebaseConfig.apiKey === _e.FIREBASE_API_KEY &&
+    firebaseConfig.projectId === _e.FIREBASE_PROJECT_ID
+) {
+    console.log("Firebase ENV loaded");
+} else {
+    console.warn("BattlexArena: Firebase env vars missing!");
+}
             app = initializeApp(firebaseConfig);
             db = getDatabase(app);
             auth = getAuth(app);
