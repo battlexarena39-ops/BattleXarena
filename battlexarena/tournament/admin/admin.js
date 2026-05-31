@@ -12,14 +12,14 @@
         // BattlexArena - Firebase Config
         // Apna Firebase config yahan paste karo (same as user/app.js)
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.firebasestorage.app",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  apiKey: "AIzaSyB_uCSen5vElscLJCxbInuOXzjXM7ghYuE",
+  authDomain: "battlexarena-4b07a.firebaseapp.com",
+  databaseURL: "https://battlexarena-4b07a-default-rtdb.firebaseio.com",
+  projectId: "battlexarena-4b07a",
+  storageBucket: "battlexarena-4b07a.firebasestorage.app",
+  messagingSenderId: "750106389329",
+  appId: "1:750106389329:web:f4e9db3ceafaa552c6c170",
+  measurementId: "G-T823ZFL8DL"
 };
 
         // ===============================================================
@@ -29,7 +29,7 @@ const firebaseConfig = {
         let app, db, auth;
         try {
             // Check if placeholder values are still present
-             if (firebaseConfig.apiKey === "YOUR_API_KEY" || !firebaseConfig.projectId) {
+             if (firebaseConfig.apiKey === "AIzaSyB_uCSen5vElscLJCxbInuOXzjXM7ghYuE" || !firebaseConfig.projectId === "battlexarena-4b07a") {
                 console.warn("BattlexArena Admin: Firebase config set nahi kiya! admin.js mein apna config daalo.");
                 // Optionally prevent initialization or show a UI warning here
                 // For this example, we'll allow initialization but log the warning.
